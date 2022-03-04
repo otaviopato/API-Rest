@@ -8,6 +8,7 @@ Creatig an REST API and simple HTML, CSS and JS with Axios to interact with this
   - [Summary](#summary)
   - [Running this project](#running-this-project)
     - [Run with live reload](#run-with-live-reload)
+  - [MER](#mer)
 
 ## Running this project ##
 
@@ -16,3 +17,9 @@ Creatig an REST API and simple HTML, CSS and JS with Axios to interact with this
 ```bash
 npm run dev
 ```
+
+## MER ##
+
+I want add some new features, and consume some oriented database.
+
+![Image](docs/databaseMER.drawio.png)
