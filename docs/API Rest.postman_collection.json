@@ -1,0 +1,113 @@
+{
+	"info": {
+		"_postman_id": "60a5675d-513e-4018-8dad-07ad49631f31",
+		"name": "API Rest",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "getAll",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host}}:{{port}}/{{baseApi}}/game",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"{{baseApi}}",
+						"game"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "searchById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host}}:{{port}}/{{baseApi}}/game/searchById",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"{{baseApi}}",
+						"game",
+						"searchById"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createNew",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"The Witcher\",\r\n  \"releaseDate\": \"2021-01-01T01:00:00.000Z\",\r\n  \"price\": {\r\n    \"normal\": 122130.12\r\n  }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}:{{port}}/{{baseApi}}/game",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"{{baseApi}}",
+						"game"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "host",
+			"value": "http://localhost",
+			"type": "string"
+		},
+		{
+			"key": "port",
+			"value": "7546",
+			"type": "string"
+		},
+		{
+			"key": "baseApi",
+			"value": "api/v1",
+			"type": "string"
+		}
+	]
+}

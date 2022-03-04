@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Loja de games</title>
+  </head>
+  <body>
+    <hr>
+    <h4>Lista de games</h4>
+    <ul id="games"></ul>
+    <hr>
+    <h4>Novo game</h4>
+    <input type="text" name="title" id="titleInput" placeholder="Título"><br>
+    <input type="datetime" name="year" id="releaseDateInput" placeholder="Data de lançamento"><br>
+    <input type="number" inputmode="numeric" name="price" id="priceInput" placeholder="Preço"><br>
+    <button type="button" id="createButton">Criar</button>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src='./index.js'></script>
+</html>
