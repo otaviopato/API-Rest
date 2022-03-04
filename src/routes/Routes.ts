@@ -1,5 +1,5 @@
-import { Router } from "express";
-import { GameRoutes } from "./GameRoutes";
+import { Router } from 'express';
+import { GameRoutes } from '@api-rest/routes/GameRoutes';
 
 export class Routes {
   public static routePath = '/api/v1';

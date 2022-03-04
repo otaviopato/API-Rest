@@ -1,7 +1,6 @@
 import { Request, Response, NextFunction } from 'express';
 import { HttpStatus } from '@api-rest/constants/HttpStatus';
 import { GameModel } from '@api-rest/models/GameModel';
-import { Log } from '@api-rest/utils/Log';
 import { INewGame } from '@api-rest/contracts/IGame';
 import { Validator } from 'node-input-validator';
 
@@ -46,7 +45,7 @@ export class GameController {
       return response.status(HttpStatus.unprocessableEntity.code).json({ error: validator.errors });
     }
 
-    const newGameParams = request.body;
+    const newGameParams: INewGame = request.body;
     const created = await GameModel.createGame(newGameParams);
     return response.status(HttpStatus.ok.code).json(created);
   }

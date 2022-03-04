@@ -1,4 +1,4 @@
-import { IHttpStatus } from "@api-rest/contracts/IHttpStatus";
+import { IHttpStatus } from '@api-rest/contracts/IHttpStatus';
 
 /**
  * @see https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Status

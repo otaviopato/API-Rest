@@ -1,4 +1,4 @@
-import { Server } from './utils/Server';
+import { Server } from '@api-rest/utils/Server';
 
 (async() => {
   const server = new Server();

@@ -1,4 +1,3 @@
-import { Log } from '@api-rest/utils/Log';
 import { IGame, INewGame } from '@api-rest/contracts/IGame';
 import { v4 as uuidv4 } from 'uuid';
 

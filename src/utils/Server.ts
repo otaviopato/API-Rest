@@ -1,7 +1,7 @@
-import * as http from 'http';
-import { HttpStatus } from '@api-rest/constants/HttpStatus';
 import express, { Express, Router, ErrorRequestHandler, Request, Response } from 'express'
+import * as http from 'http';
 import cors from 'cors';
+import { HttpStatus } from '@api-rest/constants/HttpStatus';
 import { Routes } from '@api-rest/routes/Routes';
 import { Log } from '@api-rest/utils/Log';
 
